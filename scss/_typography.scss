@@ -1,0 +1,63 @@
+
+
+h1 {
+	font-family: $font;
+	font-size: 50px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+h2 {
+	font-family: $font;
+	font-size: 26px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+h3 {
+	font-family: $font;
+	font-size: 19px;
+	line-height: 1;
+	font-weight: 700;
+}
+h4 {
+	font-family: $font;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+p,li {
+	font-size: 16px;
+	font-family: $font2;
+	line-height: 1.7em;
+}
+
+.open-sans {
+	font-family: $font2;
+}
+
+.primary-text {
+	color: $primary;
+	letter-spacing: 1px;
+	font-family: $font2;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 35px;
+	}
+	h2 {
+		font-size: 21px;
+	}
+	h3 {
+		font-size: 17px;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	p {
+		font-size: 16px;
+	}
+}

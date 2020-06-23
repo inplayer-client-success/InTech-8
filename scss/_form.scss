@@ -1,0 +1,127 @@
+.cognito form + div {
+	position: absolute;
+	z-index: -1;
+}
+
+.form {
+	.cognito {
+		background-color: transparent !important;
+
+		.c-forms-form {
+			background-color: transparent !important;
+
+			.c-forms-form-title {
+				display: none;
+			}
+
+			input[type="text"],
+			input[type="email"] {
+				font-family: $font2 !important;
+				padding: 10px;
+				margin: 10px 0;
+				border-radius: 3px;
+				border: none;
+				font-size: 15px;
+				background-color: rgba(255, 255, 255, 0.7);
+				border: 1px solid transparent;
+
+				&:focus {
+					border: 1px solid $primary;
+				}
+
+				&::placeholder {
+					color: rgba(0, 0, 0, 0.6);
+				}
+			}
+
+			.c-label {
+				font-family: $font2 !important;
+				font-weight: 600 !important;
+			}
+
+			.c-forms-form-title {
+				text-align: center;
+				padding: 0;
+
+				h2 {
+					font-family: $font !important;
+					margin-bottom: 30px;
+				}
+			}
+
+			.c-editor {
+				font-family: $font2 !important;
+				font-size: 15px !important;
+			}
+
+			.c-validation {
+				background-color: transparent !important;
+				color: #d71919 !important;
+			}
+
+			.c-forms-confirmation {
+				min-height: 100%;
+
+				.c-forms-confirmation-message {
+					p {
+						text-align: center;
+					}
+				}
+			}
+		} // c forms form
+
+		.c-forms-form-main {
+			width: 100%;
+			max-width: 500px;
+			margin: auto;
+		}
+
+		.c-span-24 {
+			.c-yesno-checkbox + .c-span-12 {
+				padding: 0 !important;
+			}
+			.c-span-12 {
+				width: 100%;
+
+				.c-html {
+					p {
+						margin: 0 !important;
+						font-size: 13px;
+					}
+				}
+			}
+		}
+
+		.c-button-section {
+			text-align: center;
+			.c-action {
+				float: none !important;
+
+				button {
+					float: none !important;
+					// display: inline-block;
+					border: none;
+					border-radius: 0;
+					// border-top-left-radius: 20px;
+					// border-bottom-right-radius: 20px;
+					font-size: 1em;
+					font-weight: 700;
+					background-color: $primary;
+					color: #fff;
+					padding: 16px 26px !important;
+					font-family: $font2 !important;
+					// box-shadow: 1px 1px 18px 1px rgba(0, 68, 126, 0.42);
+					position: relative;
+					cursor: pointer;
+
+					// @include transition(0.3s);
+
+					&:hover,
+					&:focus {
+						background-color: darken($primary, 8%) !important;
+					}
+				}
+			}
+		}
+	} // cognito
+} //form

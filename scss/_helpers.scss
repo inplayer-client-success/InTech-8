@@ -1,0 +1,72 @@
+
+// width
+.mw-600 {
+	max-width: 600px;
+}
+.mw-700 {
+	max-width: 700px;
+}
+
+// padding
+.p-0-20 {
+	padding: 0 20px;
+}
+.p-10 {
+	padding: 10px;
+}
+.p-20 {
+	padding: 20px;
+}
+.pt-50 {
+	padding-top: 50px;
+}
+
+// margin
+.m-20 {
+	margin: 20px;
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.mb-10 {
+	margin-bottom: 10px;
+}
+.m-auto {
+	margin: 0 auto;
+}
+
+.font-14 {
+	font-size: 14px;
+}
+.font-22 {
+	font-size: 22px;
+}
+
+.txt-left {
+	text-align: left;
+}
+.txt-uppercase {
+	text-transform: uppercase;
+}
+
+//display
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 767px) {
+	.sm-txt-center {
+		text-align: center;
+	}
+}

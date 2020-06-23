@@ -1,0 +1,19 @@
+
+.section    { padding: 100px 0;}
+.section-sm { padding: 50px 0;}
+
+.container {
+  padding: 0 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container-sm {max-width: 1200px;}
+.container-md {max-width: 1400px;}
+
+
+@media (max-width: 767px) {
+  .section    { padding: 50px 0;}
+  .section-sm { padding: 20px 0;}
+
+  .container{  padding: 0 20px;}
+}
