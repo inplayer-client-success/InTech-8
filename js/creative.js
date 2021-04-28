@@ -42,31 +42,8 @@ $(function () {
 	$(document).scroll(function () {
 		var nav = $("#nav-wrapper");
 		nav.toggleClass("scrolled", $(this).scrollTop() > nav.height());
-		// console.log($(this).scrollTop());
 	});
 
-	$("#registration-form").on("submit", function (e) {
-		e.preventDefault();
-		//https://sheets.googleapis.com/v4/spreadsheets/1_k5iYzOl4MPxju01ZbVHHap96RZczdliPbM4VsQa5Vw/values/A2:append?includeValuesInResponse=true&insertDataOption=INSERT_ROWS&responseDateTimeRenderOption=FORMATTED_STRING&responseValueRenderOption=FORMATTED_VALUE&valueInputOption=USER_ENTERED&key=AIzaSyCzikBkDRee8RkK0UYKbK5lmZomNE7G56s
-		$.ajax({
-			method: "POST",
-			url:
-				"https://sheets.googleapis.com/v4/spreadsheets/1_k5iYzOl4MPxju01ZbVHHap96RZczdliPbM4VsQa5Vw/values/A2:append?includeValuesInResponse=true&insertDataOption=INSERT_ROWS&responseDateTimeRenderOption=FORMATTED_STRING&responseValueRenderOption=FORMATTED_VALUE&valueInputOption=USER_ENTERED&key=AIzaSyCzikBkDRee8RkK0UYKbK5lmZomNE7G56s",
-			data: {
-				majorDimension: "ROWS",
-				values: [
-					[
-						$("#name").val(),
-						$("#email").val(),
-						$("#prof").val(),
-						$("#workshop").val(),
-						"2019-10-10 10:10:10"
-					]
-				]
-			}
-		});
-
-	});
 
 	var prevScrollPos = window.pageYOffset;
 
@@ -83,7 +60,7 @@ $(function () {
 	};
 });
 
-//show on scroll
+// show on scroll
 window.sr = ScrollReveal();
 
 sr.reveal(".image");
@@ -106,7 +83,7 @@ const second = 1000,
 	minute = second * 60,
 	hour = minute * 60,
 	day = hour * 24;
-let countDown = new Date("April 02, 2020 18:00:00").getTime(),
+let countDown = new Date("May 19, 2021 18:00:00").getTime(),
 	x = setInterval(function () {
 		let now = new Date().getTime(),
 			distance = countDown - now;

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-    content="InTech Meetup е настан кој има за цел да поттикне размена на знаења за нови технологии и вмрежување на луѓето од IT заедницата во Македонија." />
+    content="InTech Meetup is an event that focuses on knowledge and experience exchange in terms of cutting-edge technologies as well as networking among the tech community in North Macedonia." />
   <meta name="author" content="InPlayer" />
   <link rel="shortcut icon" href="img/fav.png" />
   <title>InTech Meetup #8</title>
@@ -16,14 +16,14 @@
   <meta property="og:url" content="https://www.intechmeetup.com/" />
   <meta property="og:title" content="InTech Meetup #8" />
   <meta property="og:description"
-    content="InTech Meetup е настан кој има за цел да поттикне размена на знаења за нови технологии и вмрежување на луѓето од IT заедницата во Македонија." />
-  <meta property="og:image" content="https://assets.inplayer.com/images/inplayer/Intech/fb-social.jpg" />
+    content="InTech Meetup is an event that focuses on knowledge and experience exchange in terms of cutting-edge technologies as well as networking among the tech community in North Macedonia." />
+  <meta property="og:image" content="https://assets.inplayer.com/images/inplayer/Intech/fb-social-2021.jpg" />
 
   <!-- twitter tags -->
   <meta property="twitter:title" content="InTech Meetup #8" />
   <meta property="twitter:description"
-    content="InTech Meetup е настан кој има за цел да поттикне размена на знаења за нови технологии и вмрежување на луѓето од IT заедницата во Македонија." />
-  <meta property="twitter:image" content="https://assets.inplayer.com/images/inplayer/Intech/fb-social.jpg" />
+    content="InTech Meetup is an event that focuses on knowledge and experience exchange in terms of cutting-edge technologies as well as networking among the tech community in North Macedonia." />
+  <meta property="twitter:image" content="https://assets.inplayer.com/images/inplayer/Intech/fb-social-2021.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- bootstrap grid  -->
@@ -46,7 +46,9 @@
   <!-- scroll reveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!-- <script src="/path/to/noframework.waypoints.min.js"></script> -->
+  <!-- inplayer script -->
+  <script type="text/javascript" src="https://assets.inplayer.com/paywall/v3/paywall.min.js"></script>
+
 
   <style media="screen"></style>
 </head>
@@ -55,14 +57,21 @@
   <div id="nav-wrapper">
     <div class="nav-container d-flex justify-content-between container container-md">
       <a href="#header" class="nav-logo page-scroll ">
-        <img class="logo" src="img/logo-light.png" alt="intech logo" />
+        <img class="logo" src="img/intech8-white.png" alt="intech logo" />
       </a>
       <ul id="menu" class="animated slideOutUp">
-        <li><a href="#about" class="page-scroll">За нас</a></li>
-        <li><a href="#speakers" class="page-scroll">Спикери</a></li>
+        <li><a href="#about" class="page-scroll">About Us</a></li>
+        <li><a href="#speakers" class="page-scroll">Speakers</a></li>
+        
         <li class="li-btn">
-          <a class="page-scroll" href="#form">Пријави се</a>
+          <a class="page-scroll" href="code-of-conduct.html">Code of Conduct</a>
         </li>
+        <li class="li-btn">
+          <a class="page-scroll" href="#form">Sign Up</a>
+        </li>
+        <li class="li-btn"> <a href="#/" class="inplayer-paywall-login inplayer-button" id="login">Log In</a>
+         </li>
+         <li class="li-btn"> <a href="#/" class="inplayer-paywall-logout inplayer-button">Log out</a></li>
       </ul>
       <button class="hamburger hamburger--squeeze" type="button" id="toggle">
         <span class="hamburger-box">
@@ -75,55 +84,49 @@
   <header id="header" class=" d-flex">
     <div class="header-content flex-col align-items-center justify-content-center">
       <div class="text txt-center txt-white ">
-        <h1 class="mb-20">The Future of Cyber Security in the Next Decade</h1>
-        <h4 class="open-sans mb-40 txt-uppercase">April 2, <a target="_blank"
-            href="https://www.google.com/maps/place/Brainster/@41.9923253,21.4186995,18.25z/data=!4m5!3m4!1s0x13541449c116c037:0x88831c22d3d17fb2!8m2!3d41.9924438!4d21.4193517">Brainster
-            Space,</a> 18:00</h4>
+        <h1 class="mb-20">All things Go</h1>
+        <h3 class="open-sans mb-40 txt-uppercase">May 19, <a href="#">Online Meetup</a> 6PM CET</h3>
       </div>
-
-      <!-- countdown -->
-      <!-- <div class="cd-container d-flex txt-white txt-center align-items-center">
-        <div class="mw-700 m-auto">
-          <h3 class="mb-20">Преостанато време:</h3>
-          <ul class=" d-flex  align-items-center">
-            <li class="flex-col"><b><span class="font-22" id="days"></span></b>денови</li>
-            <li class="flex-col"><b><span class="font-22" id="hours"></span></b> часови</li>
-            <li class="flex-col"><b><span class="font-22" id="minutes"></span></b> минути</li>
-            <li class="flex-col"><b><span class="font-22" id="seconds"></span></b> секунди</li>
-            <button type="button" class="button page-scroll" href="#form">
-              Пријави се
-            </button>
-          </ul>
-        </div>
-      </div> -->
-
-
     </div>
   </header>
-  <section class="alert" style="padding: 40px 0; background-color: #65c4a9;">
-    <p class="txt-center mw-600 m-auto txt">Согласно најновите препораки од Владата на РМ за воздржување од одржување на
-      јавни собири и настани, ве известуваме дека <b> Intech се одложува.</b> За новиот термин ќе ве известиме во најбрз
-      можен
-      рок.</p>
-  </section>
 
-  <section class="section bg-accent">
+
+
+
+  <section class="pb-100 bg-accent">
+    <!-- countdown -->
+    <div class="cd-container d-flex txt-white txt-center align-items-center">
+      <div class="mw-700 m-auto">
+        <h3 class="mb-20">Remaining time:</h3>
+        <ul class=" d-flex  align-items-center">
+          <li class="flex-col"><b><span class="font-22" id="days"></span></b>days</li>
+          <li class="flex-col"><b><span class="font-22" id="hours"></span></b> hours</li>
+          <li class="flex-col"><b><span class="font-22" id="minutes"></span></b> minutes</li>
+          <li class="flex-col"><b><span class="font-22" id="seconds"></span></b> seconds</li>
+          <button type="button" class="button page-scroll cta-btn sign-up" href="#">
+            Sign up!
+          </button>
+        </ul>
+      </div>
+    </div>
     <div class="d-flex align-content-center container container-sm row sm-txt-center ">
       <div class="col-md-6 col-12">
-        <h4 class="primary-text">Добредојдовте</h4>
-        <h2 class="mb-40">Што Ве очекува на InTech Meetup #8?</h2>
+        <h4 class="primary-text">Welcome</h4>
+        <h2 class="mb-40">What can you expect from InTech Meetup #8?</h2>
       </div>
       <div class="col-md-6 col-12">
         <p class="mw-600 m-auto">
-          InTech Meetup #8 овој пат ќе се одржи на 2-ри април, каде ќе зборуваме на тема <strong>“The Future of Cyber
-            Security in the Next Decade”.</strong> Во духот на традицијата на носење врвни експерти во својата област, и
-          годинава не правиме исклучок - ви ги претставуваме ветераните во cyber security индустријата, а првиот од нив
-          е
-          <strong>Yul Bahat</strong>, експерт за сајбер безбедност и поранешен виш специјалист за безбедност на
-          информации за ОЕЦД, како и шеф на разузнавање на Израелската е-владина агенција. Исто така, тој е и Certified
-          Information Systems Security Professional (CISSP).<strong> Tim Thurlings</strong> е вториот говорник кој доаѓа
-          од Холандија. Тим е CTO во Bluedog Security Monitoring и security evangelist. Ќе зборува за патот од идеја до
-          реализација во светот на сајбер безбедноста.
+          InTech meetup #8 has a new virtual format and a profound cause: building the <b> first Golang community in
+            North Macedonia</b>. At InPlayer we use Golang to build our amazing platform and we’d like to share our love
+          for this technology with everyone. Golang, as a robust system-level language used for programming across
+          large-scale network servers and big distributed systems, its features and applications, especially in the
+          context of cloud computing and infrastructure is something that sparks interest and high level of curiosity
+          among the software engineering community in general.
+        </p>
+        <br>
+        <p class="mw-600 m-auto">That indicated, InTech Meetup is the perfect opportunity to start dwelling deeper into
+          <b> “All things Go”</b> and we are excited to invite all the tech enthusiasts to our 8th in a row InTech
+          Meetup which will take place on the <b> 19th of May (Wednesday) at 6 PM CET</b>.
         </p>
       </div>
     </div>
@@ -135,28 +138,33 @@
 
   <section class="section" id="speakers">
     <div class="container container-sm ">
-      <h4 class="primary-text txt-center">Спикери</h4>
-      <h2 class="txt-center">Спикери на InTech Meetup #8</h2>
+      <h4 class="primary-text txt-center">Speakers</h4>
+      <h2 class="txt-center">Speakers InTech Meetup #8
+      </h2>
       <!-- speaker #1 -->
       <div class="row pt-50">
         <div class="col-md-12 mb-30 flex card">
-          <img class="image img-responsive" src="img/Yul.png"
-            alt="picture of Yul Bahat, global Cyber Security specialist and evangelist at EM3 Labs" />
+          <img class="image img-responsive" src="img/william.jpeg"
+            alt="picture of WILLIAM KENNEDY, global Cyber Security specialist and evangelist at EM3 Labs" />
           <div class="p-10 text">
-            <h3 class="mb-10 primary-text">Yul Bahat</h3>
+            <h3 class="mb-10 primary-text">WILLIAM KENNEDY</h3>
             <p>
-              Keynote Speaker, Cyber Security Expert
+              Keynote Speaker
             </p>
-            <a href="https://www.linkedin.com/in/yulbahat/" target="_blank" class="link p-10"><i
+            <a href="https://www.linkedin.com/in/william-kennedy-5b318778/" target="_blank" class="link p-10"><i
                 class="fab fa-linkedin font-22"></i></a>
+            <a href="https://twitter.com/goinggodotnet" target="_blank" class="link p-10"><i
+                class="fab fa-twitter font-22"></i></a>
             <p class="font-14 txt-left">
-              Долгогодишен специјалист за сајбер безбедност. Пред да ја оформи својата мала консултантска фирма
-              EM3Labs во Париз, тој работел како виш специјалист за безбедност на информации за ОЕЦД, а бил и шеф на
-              разузнавање на Израелската е-владина агенција. Господинот Bahat е дипломиран информатичар и магистер
-              по
-              бизнис администрација, а има и CISSP (Certified Information Systems Security Professional) сертификат.
-              На InTech Meetup #8 ќе зборува на темата <strong>“Detection is (almost) Dead: an intro to Deception
-                Technologies”</strong>
+              William Kennedy is a managing partner at Ardan Labs in Miami, Florida, a mobile, web, and systems
+              development company. He is also a co-author of the book Go in Action, the author of the blog GoingGo.Net,
+              and a founding member of GoBridge which is working to increase Go adoption through diversity.
+              <br><br>
+
+              William will give us an insightful presentation on the topic : <b> “Profiling and Tracing Go Apps”</b>. William
+              will aid us understand how to use the profile and trace tooling in Go. We will use a practical program to
+              find performance problems and based on what we find, refactor code to gain better performance.
+
             </p>
           </div>
         </div>
@@ -165,20 +173,47 @@
       <!-- speaker #2  -->
       <div class="row pt-50">
         <div class="col-md-12 mb-30 flex card reverse">
-          <img class="image img-responsive" src="img/Tim.png"
-            alt=" Picture of Tim Thurlings, Chief Technology Officer at Bluedog Security Monitoring (MDR), Security Evangelist" />
+          <img class="image img-responsive" src="img/natalie_pistunovich_berlin.jpg"
+            alt="picture of natalie pistunovich" />
           <div class="p-10 text">
-            <h3 class="mb-10 primary-text">Tim Thurlings</h3>
-            <p>Chief Technology Officer / Security Evangelis <br> Bluedog Security Monitoring (MDR)</p>
-            <a href="https://www.linkedin.com/in/timthurlings/" target="_blank" class="link p-10"><i
+            <h3 class="mb-10 primary-text"> NATALIE PISTUNOVICH
+            </h3>
+            <p>Keynote Speaker</p>
+            <a href="https://www.linkedin.com/in/nataliepistunovich/" target="_blank" class="link p-10"><i
+                class="fab fa-linkedin font-22"></i></a>
+            <a href="https://twitter.com/nataliepis" target="_blank" class="link p-10"><i
+                class="fab fa-twitter font-22"></i></a>
+            <p class="font-14 txt-left">
+              Natalie is a learner, a Google Developer Expert for Go, an OpenAI ambassador, a public speaker and a
+              sailor. When she's not working on robust systems at Aerospike, she is organizing the GopherCon Europe and
+              Cloud Nein conferences, and the Berlin chapters of the Go and Women Techmakers user groups. Previously,
+              she was an Engineering Manager, Software and Hardware Engineer, and a Co-Founder of a mobile start-up. In
+              her free time, she is wondering if there is life on Mars... <br><br>
+              Natalie, joining us from Berlin, will share knowledge and expertise on the topic: <b> “Fraud detection with ML (paypal use case)”</b>. Via her presentation she will facilitate the process of getting a close glimpse on how to robustly build a Machine Learning system and how to build a service that interfaces with a fast secondary data source to enhance the model’s predictions. We will have a chance to inspect infrastructure, model serving/deployment and data enrichment separately and create a working stack together.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- speaker #3 -->
+      <div class="row pt-50">
+        <div class="col-md-12 mb-30 flex card">
+          <img class="image img-responsive" src="img/stojan.jpeg"
+            alt="picture of Stojan Dimitrovski, global Cyber Security specialist and evangelist at EM3 Labs" />
+          <div class="p-10 text">
+            <h3 class="mb-10 primary-text">Stojan Dimitrovski
+            </h3>
+            <p>
+              Keynote Speaker
+            </p>
+            <a href="https://www.linkedin.com/in/stojan-dimitrovski-49530024/" target="_blank" class="link p-10"><i
                 class="fab fa-linkedin font-22"></i></a>
             <p class="font-14 txt-left">
-              Тим отсекогаш сакал да го направи светот подобро место за живеење, или барем да помогне во процесот.
-              Завршил и медицинско школо, за во буквална смисла да им помогне на луѓето, но професионалната патека
-              продолжил да ја трасира во друга насока. Тим верува дека машините можат да ни помогнат, и визијата ја
-              насочува во правец на превеција на сајбер напади. На InTech Meetup #8 ќе зборува на темата <strong> “How
-                security fails in Agile development landscapes: past, presence and future. Can’t we trust humans
-                anymore?” </strong>
+              Stojan is a life-long learner, engineer, hacker and tinkerer. He likes
+              to deep dive into various programming languages and technologies and
+              tries to find great uses for them. In his free time he likes to read
+              and invest in stocks. <br><br>Stojan will dwell into the topic <b> Goroutines : The machine behind the machine</b>. Ever wondered how Goroutines actually work and what actually makes them so fast, light and efficient? In this talk we take a dive behind the scenes exploring all the technology that makes Goroutines happen.
             </p>
           </div>
         </div>
@@ -187,69 +222,37 @@
     </div>
   </section>
 
-  <!-- <section class="section bg-light">
-    <div class="container txt-center mw-700">
-      <h4 class="primary-text">работилница</h4>
-      <h2 class="mb-40">Повеќе за работилницата</h2>
-      <p>
-        Работилницата предводена од <strong>Гоце Стефков</strong>, AWS
-        Engineer во InPlayer е на тема
-        <strong>,,Building with the AWS cloud development kit”</strong> и за
-        истата присутните задолжително треба да имаат лаптоп.
-        <i>,,Едноставните решенија се најдобрите решенија”</i> - неговото мото
-        додека се справува со предизвиците на современиот развој на софтвер.
-        Имајќи ја предвид моќта на AWS, едноставноста и ефикасноста што тој ги
-        бара, се лесно достижни.
-      </p>
-    </div>
-  </section> -->
-
   <section class=" scroll-container">
     <div class="scroll-layer scroll-container_image"></div>
   </section>
 
   <section class="section bg-grey" id="about">
     <div class="container">
-      <div class="d-flex flex-column mw-600 txt-center m-auto txt-white">
-        <h4 class="primary-text">За нас</h4>
-        <h2 class="mb-40">Што е InTech Meetup?</h2>
+      <div class="d-flex flex-column mw-600 txt-center m-auto ">
+        <h4 class="primary-text">About Us</h4>
+        <h2 class="mb-40">What is an InTech Meetup?</h2>
         <div class="p-container">
           <p class="mb-20">
-            InTech Meetup е настан кој има за цел да поттикне размена на
-            знаења за нови технологии и вмрежување на луѓето од IT заедницата
-            во Македонија. Од декември 2016 година па до сега се одржани седум
-            успешни InTech Meetup настани со истакнати домашни и
-            интернационални говорници на различни актуелни теми како
-            микросервиси, новитети во технологијата и гејмингот, прославување
-            на 20 годишнина од Open Source Software, Machine Learning.
+            InTech Meetup is all about knowledge and experience exchange in terms of cutting-edge technologies and networking among the tech community in North Macedonia. Made with love and powered
+            by the InPlayer team, our goal is to establish a place where people from all backgrounds interested in new
+            and emerging technologies can meet, share experiences, learn, present, discuss and network.
           </p>
-          <p>
-            Зад InTech Meetup може да стои секоја организација, компанија или
-            поединец кој се сложува со целите на настанот. Доколку сакате да
-            го поддржите настанот со спонзорство или држење говор, пријавете
-            се на
-            <a class="link" href="mailto:intech@inplayer.com">intech@inplayer.com</a>
+          <p class="mb-20">
+            We’ve been organizing InTech since 2016 and we are proud of all the renowned local and international
+            speakers who have been part of it, covering a variety of topics such as Microservices, Tech & Gaming,
+            Celebration of the 20th anniversary Open Source Software, Machine Learning and many more.
           </p>
+          <p>We encourage everyone who is interested to contribute or participate in the InTech meetups to drop us a
+            line at <a class="link" href="mailto:intech@inplayer.com">intech@inplayer.com</a> and help grow the
+            community even stronger. </p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-accent">
-    <div class="container container-sm txt-center">
-      <h2 class="mb-30">Спонзори</h2>
-      <div class="sponsors d-flex justify-content-center flex-wrap align-items-center">
-        <!-- <img src="img/sms.png" alt="sms construction logo" /> -->
-        <img src="img/Cognism.png" alt="cognism logo" />
-        <img src="img/laika.svg" alt="laika logo" style="margin-left: 50px" />
-        <img src="img/brainster.svg" alt="brainster logo" />
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container container-sm">
-      <h2 class="txt-center">Kaко изгледаа минатите митапи?</h2>
+      <h2 class="txt-center">How the previous meetups looked</h2>
       <div class="row pt-50">
         <!-- intech #1 -->
         <div class="col-md-4  col-sm-6 col-12">
@@ -257,7 +260,7 @@
             <img src="img/intech1.jpg" alt="Picture of InTech #1" />
             <div class="p-20">
               <h4 class="mb-10">InTech #1</h4>
-              <p>Запознавање со Micro services and Message Queue</p>
+              <p>Micro services and Message Queue</p>
             </div>
             <a href="https://www.facebook.com/pg/intechmeetup/photos/?tab=album&album_id=629748803877901"
               class="overlay-link" target="_blank"></a>
@@ -269,8 +272,7 @@
             <img src="img/intech2.jpg" alt="Picture of InTech #2" />
             <div class="p-20">
               <h4 class="mb-10">InTech #2</h4>
-              <p>
-                Запознавање со Artificial Intelligence and Machine Learning
+              <p>Artificial Intelligence and Machine Learning
               </p>
             </div>
             <a href="https://www.facebook.com/pg/intechmeetup/photos/?tab=album&album_id=673392096180238"
@@ -344,20 +346,17 @@
     </div>
   </section>
 
-  <section class="section bg-accent" id="form">
+  <section class="section-sm bg-accent" id="form">
     <div class="container">
       <div class="form">
-        <div class="cognito">
-          <h4 class="primary-text txt-center">Пријавување</h4>
-          <!-- <div class="text" style="padding: 20px 30px;">
-            <h3 class="mb-30">Ти благодариме за интересот!</h3>
-            <p>
-              За жал сите места се резервирани за настанот на 30ти Октомври.
-            </p>
-          </div> -->
-          <h2 class="txt-center">Пријави се!</h2>
-          <script src="https://services.cognitoforms.com/s/KHvUiIKHL0KvoFW-gx37Jw"></script>
-          <script>Cognito.load("forms", { id: "3" });</script>
+        <h4 class="primary-text txt-center">Sign Up</h4>
+        <h3 class="open-sans txt-uppercase txt-center">May 19, <a>Online Meetup</a> 6PM CET</h3>
+        <div class="inplayer-paywall" id="inplayer-214231"></div>
+        <div class="sign-up">
+          <img src="img/sign-up.png" alt="sign up image">
+          <button type="button" class="button page-scroll cta-btn" href="#">
+            Sign up!
+          </button>
         </div>
       </div>
     </div>
@@ -365,13 +364,14 @@
 
   <section class="section">
     <div class="container container-sm txt-center">
-      <h2 class="mb-30">Медиа поддржувачи</h2>
+      <h2 class="mb-30">Media Support</h2>
       <div class="sponsors d-flex justify-content-center flex-wrap align-items-center">
-        <img src="img/marketing365.png" alt="marketing365 logo" />
-        <img src="img/mof.png" alt="mof logo" />
-        <img src="img/smartportal.png" alt="smart portal logo" />
-        <img src="img/itmk.png" alt="ITmk logo" />
-        <img src="img/piksel.png" alt="piksel logo" />
+        <!-- <img src="img/marketing365.png" alt="marketing365 logo" /> -->
+        <img src="img/mof.png" alt="mof logo" class="w-150" />
+        <img src="img/smartportal.png" alt="smart portal logo" class="w-200" />
+        <img src="img/itmk.png" alt="ITmk logo" class="w-100" />
+        <img src="img/brainster.png" alt="ITmk logo" class="w-100" />
+        <img src="img/piksel.png" alt="piksel logo" class="w-100 " />
       </div>
     </div>
   </section>
@@ -379,7 +379,7 @@
   <footer id="footer" class="bg-grey txt-white section-sm">
     <div class="container container-md d-flex justify-content-between flex-wrap sm-justify-center">
       <div class="logo m-20">
-        <img src="img/logo-light.png" alt="logo intech" />
+        <img src="img/intech8-white.png" alt="logo intech" />
       </div>
       <div class="txt-right sm-txt-center m-20 txt-footer">
         <div class="social-media">
@@ -407,8 +407,37 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-  <script type="text/javascript"></script>
+  <script type="text/javascript">
+
+    var paywall = new InplayerPaywall('a1616c36-d3fb-4548-9b9e-71912990e343', [{
+      id: 214231,
+      options: {
+        noPreview: true,
+        // noInject: true,
+      }
+    }]);
+
+    $(".cta-btn").click(function () {
+      paywall.showPaywall({
+        asset: {
+          assetId: 214231,
+        }
+      });
+    });
+
+    paywall.on('access', function (e, data) {
+      if (data.hasAccess) {
+        $(".sign-up").hide();
+      }
+    });
+    paywall.on("logout", function () {
+      location.reload();
+    });
+
+  </script>
 </body>
 
 </html>
