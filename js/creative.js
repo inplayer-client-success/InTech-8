@@ -1,17 +1,3 @@
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(".page-scroll").bind("click", function (event) {
-	var $anchor = $(this);
-	$("html, body")
-		.stop()
-		.animate(
-			{
-				scrollTop: $($anchor.attr("href")).offset().top - 50
-			},
-			350,
-			"easeOutQuad"
-		);
-	event.preventDefault();
-});
 
 //  scrollreveal
 ScrollReveal().reveal(".header-content", { delay: 500 });
@@ -42,6 +28,7 @@ $(function () {
 	$(document).scroll(function () {
 		var nav = $("#nav-wrapper");
 		nav.toggleClass("scrolled", $(this).scrollTop() > nav.height());
+		// console.log($(this).scrollTop());
 	});
 
 

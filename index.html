@@ -62,16 +62,13 @@
       <ul id="menu" class="animated slideOutUp">
         <li><a href="#about" class="page-scroll">About Us</a></li>
         <li><a href="#speakers" class="page-scroll">Speakers</a></li>
-        
-        <li class="li-btn">
-          <a class="page-scroll" href="code-of-conduct.html">Code of Conduct</a>
-        </li>
+        <li><a href="code-of-conduct.html" class="page-scroll">Code of Conduct</a></li>
         <li class="li-btn">
           <a class="page-scroll" href="#form">Sign Up</a>
         </li>
         <li class="li-btn"> <a href="#/" class="inplayer-paywall-login inplayer-button" id="login">Log In</a>
-         </li>
-         <li class="li-btn"> <a href="#/" class="inplayer-paywall-logout inplayer-button">Log out</a></li>
+        </li>
+        <li class="li-btn"> <a href="#/" class="inplayer-paywall-logout inplayer-button">Log out</a></li>
       </ul>
       <button class="hamburger hamburger--squeeze" type="button" id="toggle">
         <span class="hamburger-box">
@@ -80,6 +77,8 @@
       </button>
     </div>
   </div>
+
+
 
   <header id="header" class=" d-flex">
     <div class="header-content flex-col align-items-center justify-content-center">
@@ -161,7 +160,8 @@
               and a founding member of GoBridge which is working to increase Go adoption through diversity.
               <br><br>
 
-              William will give us an insightful presentation on the topic : <b> “Profiling and Tracing Go Apps”</b>. William
+              William will give us an insightful presentation on the topic : <b> “Profiling and Tracing Go Apps”</b>.
+              William
               will aid us understand how to use the profile and trace tooling in Go. We will use a practical program to
               find performance problems and based on what we find, refactor code to gain better performance.
 
@@ -189,7 +189,11 @@
               Cloud Nein conferences, and the Berlin chapters of the Go and Women Techmakers user groups. Previously,
               she was an Engineering Manager, Software and Hardware Engineer, and a Co-Founder of a mobile start-up. In
               her free time, she is wondering if there is life on Mars... <br><br>
-              Natalie, joining us from Berlin, will share knowledge and expertise on the topic: <b> “Infrastructure for ML Applications”</b>. Via her presentation she will facilitate the process of getting a close glimpse on how to robustly build a Machine Learning system and how to build a service that interfaces with a fast secondary data source to enhance the model’s predictions. We will have a chance to inspect infrastructure, model serving/deployment and data enrichment separately and create a working stack together.
+              Natalie, joining us from Berlin, will share knowledge and expertise on the topic: <b> “Infrastructure for
+                ML Applications”</b>. Via her presentation she will facilitate the process of getting a close glimpse on
+              how to robustly build a Machine Learning system and how to build a service that interfaces with a fast
+              secondary data source to enhance the model’s predictions. We will have a chance to inspect infrastructure,
+              model serving/deployment and data enrichment separately and create a working stack together.
 
             </p>
           </div>
@@ -213,7 +217,10 @@
               Stojan is a life-long learner, engineer, hacker and tinkerer. He likes
               to deep dive into various programming languages and technologies and
               tries to find great uses for them. In his free time he likes to read
-              and invest in stocks. <br><br>Stojan will dwell into the topic <b> Goroutines : The machine behind the machine</b>. Ever wondered how Goroutines actually work and what actually makes them so fast, light and efficient? In this talk we take a dive behind the scenes exploring all the technology that makes Goroutines happen.
+              and invest in stocks. <br><br>Stojan will dwell into the topic <b> Goroutines : The machine behind the
+                machine</b>. Ever wondered how Goroutines actually work and what actually makes them so fast, light and
+              efficient? In this talk we take a dive behind the scenes exploring all the technology that makes
+              Goroutines happen.
             </p>
           </div>
         </div>
@@ -233,7 +240,8 @@
         <h2 class="mb-40">What is an InTech Meetup?</h2>
         <div class="p-container">
           <p class="mb-20">
-            InTech Meetup is all about knowledge and experience exchange in terms of cutting-edge technologies and networking among the tech community in North Macedonia. Made with love and powered
+            InTech Meetup is all about knowledge and experience exchange in terms of cutting-edge technologies and
+            networking among the tech community in North Macedonia. Made with love and powered
             by the InPlayer team, our goal is to establish a place where people from all backgrounds interested in new
             and emerging technologies can meet, share experiences, learn, present, discuss and network.
           </p>
@@ -357,10 +365,12 @@
           <button type="button" class="button page-scroll cta-btn" href="#">
             Sign up!
           </button>
+         
         </div>
       </div>
     </div>
   </section>
+  <div id="showPigeonHole"></div>
 
   <section class="section">
     <div class="container container-sm txt-center">
@@ -403,7 +413,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/creative.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -436,6 +445,39 @@
     paywall.on("logout", function () {
       location.reload();
     });
+
+    paywall.on('authenticated', (e, data) => {
+      var user = data.account;
+      $("#showPigeonHole").html(renderPigeonHole(user.id, user.full_name, user.email));
+    });
+
+    // pigeon hole 
+    function renderPigeonHole(userId, userName, userEmail) {
+      var iframe = '<div id="appendChat">';
+      iframe += '<iframe style="width: 300px; height: 100%" src="https://pigeonhole.at/INPLAYER/i/2001582?phName=' + userName + '&phEmail=' + userEmail + '" frameborder="0"></iframe>';
+      iframe += '</div>';
+      iframe += '<span class="show-hide-chat"><i class="fas fa-arrow-circle-right"></i></span>';
+      return iframe;
+    }
+    window.addEventListener('load', function () {
+
+      $('body').on('click', '.show-hide-chat', function () {
+        if ($(this).children("i").hasClass('fa-arrow-circle-right')) {
+          $("#appendChat").hide();
+          $(this).css("right", "20px");
+          $(this).children("i").removeClass("fa-arrow-circle-right");
+          $(this).children("i").addClass("fa-arrow-circle-left");
+        } else {
+          $("#appendChat").show();
+          $(this).css("right", "280px");
+          $(this).children("i").removeClass("fa-arrow-circle-left");
+          $(this).children("i").addClass("fa-arrow-circle-right");
+        }
+
+      });
+
+    });
+
 
   </script>
 </body>

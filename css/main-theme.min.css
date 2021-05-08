@@ -753,4 +753,33 @@ body #about {
   color: #222;
 }
 
+#showPigeonHole #appendChat {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+  height: 100%;
+}
+#showPigeonHole #appendChat iframe {
+  width: 300px;
+  height: 100%;
+}
+#showPigeonHole .show-hide-chat {
+  position: fixed;
+  right: 280px;
+  top: 50%;
+  font-size: 40px;
+  color: #C2A1D3;
+  cursor: pointer;
+  z-index: 100000;
+}
+#showPigeonHole .show-hide-chat i {
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+#showPigeonHole .show-hide-chat i:hover {
+  opacity: 0.8;
+}
+
 /*# sourceMappingURL=style.scss.map */
