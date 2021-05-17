@@ -358,8 +358,8 @@
     <div class="container">
       <div class="form">
         <h4 class="primary-text txt-center">Sign Up</h4>
-        <h3 class="open-sans txt-uppercase txt-center">May 19, <a>Online Meetup</a> 6PM CET</h3>
-        <div class="inplayer-paywall" id="inplayer-214231"></div>
+        <h3 class="open-sans txt-uppercase txt-center hide-txt" >May 19, <a>Online Meetup</a> 6PM CET</h3>
+        <div class="inplayer-paywall" id="inplayer-260123"></div>
         <div class="sign-up">
           <img src="img/sign-up.png" alt="sign up image">
           <button type="button" class="button page-scroll cta-btn" href="#">
@@ -427,7 +427,7 @@
   <script type="text/javascript">
 
     var paywall = new InplayerPaywall('a1616c36-d3fb-4548-9b9e-71912990e343', [{
-      id: 214231,
+      id: 260123,
       options: {
         noPreview: true,
         // noInject: true,
@@ -437,7 +437,7 @@
     $(".cta-btn").click(function () {
       paywall.showPaywall({
         asset: {
-          assetId: 214231,
+          assetId: 260123,
         }
       });
     });
@@ -445,6 +445,12 @@
     paywall.on('access', function (e, data) {
       if (data.hasAccess) {
         $(".sign-up").hide();
+        $(".hide-txt").hide();
+        // $('html, body').scrollTo('#form');
+        $('html, body').animate({
+        scrollTop: $("#form").offset().top
+    }, 100);
+    return false;
       }
     });
     paywall.on("logout", function () {
@@ -455,6 +461,7 @@
       var user = data.account;
       $("#showPigeonHole").html(renderPigeonHole(user.id, user.full_name, user.email));
     });
+
 
     // pigeon hole 
     function renderPigeonHole(userId, userName, userEmail) {
