@@ -77,7 +77,6 @@
     text-align: center;
   }
 }
-
 h1 {
   font-family: "Roboto Slab", slab-serif;
   font-size: 50px;
@@ -129,20 +128,23 @@ p, li {
   h1 {
     font-size: 35px;
   }
+
   h2 {
     font-size: 21px;
   }
+
   h3 {
     font-size: 17px;
   }
+
   h4 {
     font-size: 16px;
   }
+
   p {
     font-size: 16px;
   }
 }
-
 .hide {
   display: none;
 }
@@ -188,7 +190,6 @@ button:focus {
   cursor: pointer;
   text-transform: uppercase;
 }
-
 .button:hover {
   background-color: #ae82c4;
 }
@@ -197,7 +198,6 @@ a {
   text-decoration: none;
   color: #C2A1D3;
 }
-
 a.link:hover {
   opacity: 0.7;
 }
@@ -217,16 +217,16 @@ a.link:hover {
   opacity: 0.5;
   background-color: rgba(9, 9, 9, 0.6);
   border-radius: 60px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .back-to-top i {
   font-size: 38px;
   position: relative;
   left: -1.5px;
   top: -1.5px;
 }
-
 .back-to-top:hover {
   opacity: 1;
 }
@@ -263,17 +263,14 @@ a.link:hover {
 .form .cognito {
   background-color: transparent !important;
 }
-
 .form .cognito .c-forms-form {
   background-color: transparent !important;
 }
-
 .form .cognito .c-forms-form .c-forms-form-title {
   display: none;
 }
-
-.form .cognito .c-forms-form input[type="text"],
-.form .cognito .c-forms-form input[type="email"] {
+.form .cognito .c-forms-form input[type=text],
+.form .cognito .c-forms-form input[type=email] {
   font-family: "Open Sans", sans-serif !important;
   padding: 10px;
   margin: 10px 0;
@@ -283,77 +280,61 @@ a.link:hover {
   background-color: rgba(255, 255, 255, 0.7);
   border: 1px solid transparent;
 }
-
-.form .cognito .c-forms-form input[type="text"]:focus,
-.form .cognito .c-forms-form input[type="email"]:focus {
+.form .cognito .c-forms-form input[type=text]:focus,
+.form .cognito .c-forms-form input[type=email]:focus {
   border: 1px solid #C2A1D3;
 }
-
-.form .cognito .c-forms-form input[type="text"]::placeholder,
-.form .cognito .c-forms-form input[type="email"]::placeholder {
+.form .cognito .c-forms-form input[type=text]::placeholder,
+.form .cognito .c-forms-form input[type=email]::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
-
 .form .cognito .c-forms-form .c-label {
   font-family: "Open Sans", sans-serif !important;
   font-weight: 600 !important;
 }
-
 .form .cognito .c-forms-form .c-forms-form-title {
   text-align: center;
   padding: 0;
 }
-
 .form .cognito .c-forms-form .c-forms-form-title h2 {
   font-family: "Roboto Slab", slab-serif !important;
   margin-bottom: 30px;
 }
-
 .form .cognito .c-forms-form .c-editor {
   font-family: "Open Sans", sans-serif !important;
   font-size: 15px !important;
 }
-
 .form .cognito .c-forms-form .c-validation {
   background-color: transparent !important;
   color: #d71919 !important;
 }
-
 .form .cognito .c-forms-form .c-forms-confirmation {
   min-height: 100%;
 }
-
 .form .cognito .c-forms-form .c-forms-confirmation .c-forms-confirmation-message p {
   text-align: center;
 }
-
 .form .cognito .c-forms-form-main {
   width: 100%;
   max-width: 500px;
   margin: auto;
 }
-
 .form .cognito .c-span-24 .c-yesno-checkbox + .c-span-12 {
   padding: 0 !important;
 }
-
 .form .cognito .c-span-24 .c-span-12 {
   width: 100%;
 }
-
 .form .cognito .c-span-24 .c-span-12 .c-html p {
   margin: 0 !important;
   font-size: 13px;
 }
-
 .form .cognito .c-button-section {
   text-align: center;
 }
-
 .form .cognito .c-button-section .c-action {
   float: none !important;
 }
-
 .form .cognito .c-button-section .c-action button {
   float: none !important;
   border: none;
@@ -367,7 +348,6 @@ a.link:hover {
   position: relative;
   cursor: pointer;
 }
-
 .form .cognito .c-button-section .c-action button:hover, .form .cognito .c-button-section .c-action button:focus {
   background-color: #b085c6 !important;
 }
@@ -398,19 +378,19 @@ a.link:hover {
   .section {
     padding: 50px 0;
   }
+
   .section-sm {
     padding: 20px 0;
   }
+
   .container {
     padding: 0 20px;
   }
 }
-
 .card {
   width: 100%;
   justify-content: center;
 }
-
 .card .overlay-link {
   position: absolute;
   top: 0;
@@ -418,12 +398,10 @@ a.link:hover {
   width: 100%;
   height: 100%;
 }
-
 .card.hover:hover {
   box-shadow: 0 3px 8px 1px rgba(20, 40, 81, 0.17);
   transform: translateY(-3px);
 }
-
 .card .image {
   width: 100%;
   margin-right: 30px;
@@ -433,29 +411,24 @@ a.link:hover {
   height: 100%;
   max-height: 400px;
 }
-
 @media (max-width: 500px) {
   .card .image {
     max-width: 320px;
     max-height: 320px;
   }
 }
-
 .card .text {
   max-width: 600px;
   align-self: center;
   position: relative;
   animation: slidein 1s;
 }
-
 .card .text p:first-of-type {
   font-size: 14px;
 }
-
 .card .text .link i {
   margin: 10px 0 20px 0;
 }
-
 @media (max-width: 1100px) {
   .card {
     flex-direction: column;
@@ -475,7 +448,6 @@ a.link:hover {
   display: flex;
   flex-direction: row-reverse;
 }
-
 .reverse .image {
   margin-left: 30px;
   margin-right: 0;
@@ -501,7 +473,6 @@ body {
   -moz-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 }
-
 body #nav-wrapper {
   z-index: 100;
   position: fixed;
@@ -511,13 +482,11 @@ body #nav-wrapper {
   padding: 10px 30px;
   transition: all 0.3s ease-out;
 }
-
 body #nav-wrapper .nav-container {
   display: flex;
   flex-direction: row;
   padding: 10px 0;
 }
-
 body #nav-wrapper .nav-container ul {
   list-style: none;
   display: flex;
@@ -525,33 +494,27 @@ body #nav-wrapper .nav-container ul {
   margin: 0;
   animation-duration: 0.5s;
 }
-
 body #nav-wrapper .nav-container ul li {
   display: inline;
   text-align: center;
   font-weight: 600;
   margin: 0 15px;
 }
-
 body #nav-wrapper .nav-container ul li a {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   text-decoration: none;
 }
-
 body #nav-wrapper .nav-container ul li.li-btn a {
   border: none;
   padding: 0;
 }
-
 body #nav-wrapper .nav-container ul li.li-btn a:hover {
   background-color: transparent;
 }
-
 body #nav-wrapper .nav-container ul li:hover {
   opacity: 0.6;
 }
-
 body #nav-wrapper .nav-container .nav-logo {
   display: flex;
   align-items: center;
@@ -560,28 +523,26 @@ body #nav-wrapper .nav-container .nav-logo {
   font-weight: 700;
   z-index: 5;
 }
-
 @media (min-width: 790px) {
   body #nav-wrapper .hamburger {
     display: none;
   }
 }
-
 body #nav-wrapper.scrolled {
   background-color: #222;
   width: 100%;
 }
-
 body .logo {
   width: 140px;
 }
-
 @media (min-width: 790px) {
   body #menu.animated {
+    -ms-animation: none;
+    -moz-animation: none;
+    -webkit-animation: none;
     animation: none;
   }
 }
-
 @media (max-width: 789px) {
   body #nav-wrapper {
     padding: 0;
@@ -616,7 +577,6 @@ body .logo {
     display: flex;
   }
 }
-
 body #header {
   position: relative;
   background: url("../img/header.jpg") center center/cover no-repeat;
@@ -626,31 +586,26 @@ body #header {
   padding: 100px 0;
   z-index: 4;
 }
-
 body .header-content {
   padding: 0;
   margin: 0;
   width: 100%;
 }
-
 body .header-content .text {
   padding: 20px 30px;
   max-width: 800px;
   margin: 0 auto;
 }
-
 @media screen and (max-width: 600px) {
   body .header-content .text {
     margin: 0 auto 40px;
   }
 }
-
 @media screen and (max-width: 1200px) {
   body #header h1 {
     font-size: 40px;
   }
 }
-
 @media screen and (max-width: 767px) {
   body #header {
     min-height: 90vh;
@@ -659,13 +614,11 @@ body .header-content .text {
     font-size: 35px;
   }
 }
-
 @media screen and (max-width: 455px) {
   body #header {
     padding: 100px 0 170px 0;
   }
 }
-
 @media screen and (max-width: 400px) {
   body #header h1 {
     font-size: 28px;
@@ -674,72 +627,58 @@ body .header-content .text {
     margin: 0;
   }
 }
-
 body .cd-container {
   background-color: #efe6f4;
   padding: 40px 0;
   width: 100%;
   margin: 0 auto;
 }
-
 body .cd-container h3 {
   color: #222;
 }
-
 body .cd-container ul {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
 body .cd-container ul li {
   align-self: center;
   padding: 7px;
   color: #222;
 }
-
 body .cd-container ul button {
   margin-left: 15px;
 }
-
 body .welcome-text {
   max-width: 1100px;
 }
-
 body .welcome-text h2 {
   text-align: center;
   display: block;
   margin: 10px auto 30px;
 }
-
 body .welcome-text p {
   padding: 10px;
 }
-
 body .code-of-conduct {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
 }
-
 body .code-of-conduct h3 {
   margin: 25px 0;
 }
-
 body .code-of-conduct ul {
   list-style: circle;
 }
-
 body .code-of-conduct ul li ul {
   margin-left: 30px;
   list-style: disc;
 }
-
 body .sponsors img {
   width: 100%;
   margin: 15px;
   max-height: 100px;
 }
-
 body .form .text {
   text-align: center;
   padding: 50px 30px;
@@ -747,7 +686,6 @@ body .form .text {
   max-width: 500px;
   margin: auto;
 }
-
 body .form .sign-up {
   display: flex;
   flex-wrap: wrap;
@@ -756,58 +694,48 @@ body .form .sign-up {
   max-width: 500px;
   margin: 0 auto;
 }
-
 body .form .sign-up img {
   width: 100%;
   max-width: 250px;
   margin: 30px auto;
 }
-
 body .form .sign-up button {
   display: block;
   margin: 0 auto;
 }
-
 body #footer .social-media i {
   font-size: 20px;
   margin: 10px;
   color: #fff;
 }
-
 body #footer .justify-content-between {
   align-items: center;
 }
-
 @media (max-width: 590px) {
   body #footer .sm-justify-center {
     justify-content: center !important;
     text-align: center;
   }
 }
-
 @media (max-width: 558px) {
   body #footer .txt-footer {
     text-align: center;
   }
 }
-
 body.overflow {
   overflow: hidden;
 }
-
 body .scroll-container {
   height: 300px;
   overflow: hidden;
   perspective: 2px;
 }
-
 body .scroll-container .scroll-layer {
   position: relative;
   top: 0;
   right: 0;
   height: 100%;
 }
-
 body .scroll-container .scroll-container_image::after {
   content: "";
   width: 100%;
@@ -823,7 +751,6 @@ body .scroll-container .scroll-container_image::after {
   transform: scale(1.2) translateY(40px);
   transform-style: preserve-3d;
 }
-
 body #about {
   background-color: #efe6f4;
   color: #222;
@@ -836,12 +763,10 @@ body #about {
   z-index: 10000;
   height: 100%;
 }
-
 #showPigeonHole #appendChat iframe {
   width: 300px;
   height: 100%;
 }
-
 #showPigeonHole .show-hide-chat {
   position: fixed;
   right: 280px;
@@ -851,14 +776,13 @@ body #about {
   cursor: pointer;
   z-index: 100000;
 }
-
 #showPigeonHole .show-hide-chat i {
   background: white;
   border-radius: 50%;
   transition: all 0.3s;
 }
-
 #showPigeonHole .show-hide-chat i:hover {
   opacity: 0.8;
 }
-/*# sourceMappingURL=main-theme.min.css.map */
+
+/*# sourceMappingURL=style.scss.map */
