@@ -359,7 +359,7 @@
       <div class="form">
         <h4 class="primary-text txt-center">Sign Up</h4>
         <h3 class="open-sans txt-uppercase txt-center hide-txt" >May 19, <a>Online Meetup</a> 6PM CET</h3>
-        <div class="inplayer-paywall" id="inplayer-214231" style="width: 70%;"></div>
+        <div class="inplayer-paywall" id="inplayer-214231"></div>
         <div class="sign-up">
           <img src="img/sign-up.png" alt="sign up image">
           <button type="button" class="button page-scroll cta-btn" href="#">
@@ -464,31 +464,31 @@
 
 
     // pigeon hole 
-    function renderPigeonHole(userId, userName, userEmail) {
-      var iframe = '<div id="appendChat">';
-      iframe += '<iframe style="width: 300px; height: 100%" src="https://pigeonhole.at/INPLAYER123/i/2047668?phName=' + userName + '&phEmail=' + userEmail + '" frameborder="0"></iframe>';
-      iframe += '</div>';
-      iframe += '<span class="show-hide-chat"><i class="fas fa-arrow-circle-right"></i></span>';
-      return iframe;
-    }
-    window.addEventListener('load', function () {
+    // function renderPigeonHole(userId, userName, userEmail) {
+    //   var iframe = '<div id="appendChat">';
+    //   iframe += '<iframe style="width: 300px; height: 100%" src="https://pigeonhole.at/INPLAYER123/i/2047668?phName=' + userName + '&phEmail=' + userEmail + '" frameborder="0"></iframe>';
+    //   iframe += '</div>';
+    //   iframe += '<span class="show-hide-chat"><i class="fas fa-arrow-circle-right"></i></span>';
+    //   return iframe;
+    // }
+    // window.addEventListener('load', function () {
 
-      $('body').on('click', '.show-hide-chat', function () {
-        if ($(this).children("i").hasClass('fa-arrow-circle-right')) {
-          $("#appendChat").hide();
-          $(this).css("right", "20px");
-          $(this).children("i").removeClass("fa-arrow-circle-right");
-          $(this).children("i").addClass("fa-arrow-circle-left");
-        } else {
-          $("#appendChat").show();
-          $(this).css("right", "280px");
-          $(this).children("i").removeClass("fa-arrow-circle-left");
-          $(this).children("i").addClass("fa-arrow-circle-right");
-        }
+    //   $('body').on('click', '.show-hide-chat', function () {
+    //     if ($(this).children("i").hasClass('fa-arrow-circle-right')) {
+    //       $("#appendChat").hide();
+    //       $(this).css("right", "20px");
+    //       $(this).children("i").removeClass("fa-arrow-circle-right");
+    //       $(this).children("i").addClass("fa-arrow-circle-left");
+    //     } else {
+    //       $("#appendChat").show();
+    //       $(this).css("right", "280px");
+    //       $(this).children("i").removeClass("fa-arrow-circle-left");
+    //       $(this).children("i").addClass("fa-arrow-circle-right");
+    //     }
 
-      });
+    //   });
 
-    });
+    // });
 
 
   </script>
